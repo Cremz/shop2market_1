@@ -4,4 +4,9 @@ gem 'nokogiri'
 gem 'rails'
 gem 'awesome_print'
 gem 'rack', '~>1.1'
-gem 'rspec', :require => 'spec'
+group :development, :test do
+  gem 'rspec'
+  gem 'simplecov', require: false
+  gem 'rubocop'
+  gem 'webmock'
+end
